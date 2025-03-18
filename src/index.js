@@ -23,6 +23,6 @@ tbMessage.addEventListener("keyup", function (e) {
 });
 btnSend.addEventListener("click", send);
 function send() {
-    connection.send("newMessage", username, tbMessage.value)
+    connection.send("SendMessage", username, tbMessage.value)
         .then(function () { return (tbMessage.value = ""); });
 }
